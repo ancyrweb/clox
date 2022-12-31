@@ -29,6 +29,7 @@ static InterpretResult run() {
     push(a op b);                                                              \
   } while (false)
 
+  // Main Loop
   for (;;) {
 #ifdef DEBUG_TRACE_EXECUTION
     disassemble_instruction(vm.chunk, (int)(vm.ip - vm.chunk->code));
@@ -98,6 +99,18 @@ Value pop() {
 }
 
 InterpretResult interpret(const char *source) {
-  compile(source);
-  return INTERPRET_OK;
+  Chunk chunk;
+  init_chunk(&chunk);
+
+  if (!compile(source, &chunk)) {
+    free_chunk(&chunk);
+    return INTERPRET_COMPILE_ERROR;
+  }
+
+  vm.chunk = &chunk;
+  vm.ip = vm.chunk->code;
+
+  InterpretResult result = run();
+  free_chunk(&chunk);
+  return result;
 }

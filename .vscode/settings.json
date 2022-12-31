@@ -5,6 +5,12 @@
     "stdlib.h": "c",
     "chunk.h": "c",
     "memory.h": "c",
-    "debug.h": "c"
+    "debug.h": "c",
+    "__availability": "c",
+    "bitset": "c",
+    "limits": "c",
+    "ratio": "c",
+    "*.tcc": "c",
+    "type_traits": "c"
   }
 }
