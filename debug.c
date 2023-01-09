@@ -40,6 +40,8 @@ int disassemble_instruction(Chunk *chunk, int offset) {
       return constant_instruction("OP_CONSTANT", chunk, offset);
     case OP_NEGATE:
       return simple_instruction("OP_NEGATE", offset);    
+    case OP_NOT:
+      return simple_instruction("OP_NOT", offset);    
     case OP_TRUE:
       return simple_instruction("OP_TRUE", offset);   
     case OP_FALSE:
@@ -54,6 +56,12 @@ int disassemble_instruction(Chunk *chunk, int offset) {
       return simple_instruction("OP_MULTIPLY", offset);
     case OP_DIVIDE:
       return simple_instruction("OP_DIVIDE", offset);
+    case OP_EQUAL:
+      return simple_instruction("OP_EQUAL", offset);
+    case OP_GREATER: 
+      return simple_instruction("OP_GREATER", offset);
+    case OP_LESS:
+      return simple_instruction("OP_LESS", offset);
     default:
       printf("Unknown opcode %d\n", instruction);
       return offset + 1;
