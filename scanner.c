@@ -133,10 +133,14 @@ static bool is_alpha(char c) {
   return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == '_';
 }
 
-static TokenType check_keyword(int start, int length, const char *rest,
-                               TokenType type) {
-  if (scanner.current - scanner.start == start + length &&
-      memcpy(scanner.start + start, rest, length) == 0) {
+static TokenType check_keyword(
+  int start, int length, const char *rest, TokenType type
+) {
+
+  if (
+    scanner.current - scanner.start == start + length &&
+    memcmp(scanner.start + start, rest, length) == 0
+  ) {
     return type;
   }
 
@@ -178,11 +182,11 @@ static TokenType identifier_type() {
   case 't':
     if (scanner.current - scanner.start > 1) {
       switch (scanner.start[1]) {
-      case 'h':
-        return check_keyword(2, 2, "is", TOKEN_THIS);
-      case 'r':
-        return check_keyword(2, 2, "ue", TOKEN_TRUE);
-      }
+        case 'h':
+          return check_keyword(2, 2, "is", TOKEN_THIS);
+        case 'r':
+          return check_keyword(2, 2, "ue", TOKEN_TRUE);
+        }
     }
     break;
   case 'v':
@@ -197,6 +201,7 @@ static Token identifier() {
   while (is_alpha(peek()) || is_digit(peek())) {
     advance();
   }
+
   return make_token(identifier_type());
 }
 
