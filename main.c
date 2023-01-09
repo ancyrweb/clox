@@ -16,6 +16,8 @@ static void repl() {
       break;
     }
 
+    // TODO : remove in real mode
+    init_vm();
     interpret(line);
   }
 }

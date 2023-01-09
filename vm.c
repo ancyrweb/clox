@@ -112,5 +112,6 @@ InterpretResult interpret(const char *source) {
 
   InterpretResult result = run();
   free_chunk(&chunk);
+
   return result;
 }

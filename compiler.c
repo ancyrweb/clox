@@ -123,11 +123,11 @@ static void emit_constant(Value value) {
 
 static void end_compiler() {
   emit_return();
-#ifdef DEBUG_PRINT_CODE
+  #ifdef DEBUG_PRINT_CODE
   if (!parser.had_error) {
-    disassemble_chunk(current_chunk(), "code");
+    // disassemble_chunk(current_chunk(), "code");
   }
-#endif
+  #endif
   return;
 }
 
@@ -141,20 +141,20 @@ static void binary() {
   parse_precedence((Precedence)(rule->precedence + 1));
 
   switch (operator_type) {
-  case TOKEN_PLUS:
-    emit_byte(OP_ADD);
-    break;
-  case TOKEN_MINUS:
-    emit_byte(OP_SUBTRACT);
-    break;
-  case TOKEN_STAR:
-    emit_byte(OP_MULTIPLY);
-    break;
-  case TOKEN_SLASH:
-    emit_byte(OP_DIVIDE);
-    break;
-  default:
-    return; // Unreachable.
+    case TOKEN_PLUS:
+      emit_byte(OP_ADD);
+      break;
+    case TOKEN_MINUS:
+      emit_byte(OP_SUBTRACT);
+      break;
+    case TOKEN_STAR:
+      emit_byte(OP_MULTIPLY);
+      break;
+    case TOKEN_SLASH:
+      emit_byte(OP_DIVIDE);
+      break;
+    default:
+      return; // Unreachable.
   }
 }
 
@@ -176,13 +176,13 @@ static void unary() {
 
   // emit operator instruction
   switch (operator_type) {
-  case TOKEN_MINUS: {
-    emit_byte(OP_NEGATE);
-    break;
-  }
-  default: {
-    return;
-  }
+    case TOKEN_MINUS: {
+      emit_byte(OP_NEGATE);
+      break;
+    }
+    default: {
+      return;
+    }
   }
 }
 
