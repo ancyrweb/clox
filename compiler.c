@@ -245,8 +245,6 @@ static ParseRule *get_rule(TokenType type) { return &rules[type]; }
 static void parse_precedence(Precedence precedence) {
   advance();
   ParseFn prefix_rule = get_rule(parser.previous.type)->prefix;
-  printf("Is null ? %d %d\n", prefix_rule == NULL ? 1 : 0, parser.previous.type);
-
   if (prefix_rule == NULL) {
     error("Expect expression.");
     return;
