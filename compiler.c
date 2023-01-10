@@ -281,7 +281,6 @@ static void parse_precedence(Precedence precedence) {
 }
 
 static void expression() {
-  // hehe
   parse_precedence(PREC_ASSIGNMENT);
   return;
 }
@@ -296,24 +295,7 @@ bool compile(const char *source, Chunk *chunk) {
   advance();
   expression();
   consume(TOKEN_EOF, "Expect end of expression");
-
-  int line = -1;
-  for (;;) {
-    Token token = scan_token();
-    if (token.line != line) {
-      printf("%4d ", token.line);
-      line = token.line;
-    } else {
-      printf("   | ");
-    }
-
-    printf("%2d '%.*s'\n", token.type, token.length, token.start);
-
-    if (token.type == TOKEN_EOF) {
-      break;
-    }
-  }
-
   end_compiler();
+  
   return !parser.had_error;
 }
