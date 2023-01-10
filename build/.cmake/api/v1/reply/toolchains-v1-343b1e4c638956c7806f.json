@@ -10,16 +10,16 @@
 				{
 					"includeDirectories" : 
 					[
-						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin22/12/include",
-						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin22/12/include-fixed",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin22/12/include",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin22/12/include-fixed",
 						"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include",
 						"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks"
 					],
 					"linkDirectories" : 
 					[
-						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin22/12",
-						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc",
-						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin22/12",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current",
 						"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/lib"
 					],
 					"linkFrameworkDirectories" : 
@@ -29,10 +29,11 @@
 					"linkLibraries" : 
 					[
 						"emutls_w",
+						"gcc",
 						"gcc"
 					]
 				},
-				"path" : "/usr/local/bin/gcc-12",
+				"path" : "/opt/homebrew/bin/aarch64-apple-darwin22-gcc-12",
 				"version" : "12.2.0"
 			},
 			"language" : "C",
@@ -50,19 +51,19 @@
 				{
 					"includeDirectories" : 
 					[
-						"/usr/local/Cellar/gcc/12.2.0/include/c++/12",
-						"/usr/local/Cellar/gcc/12.2.0/include/c++/12/x86_64-apple-darwin22",
-						"/usr/local/Cellar/gcc/12.2.0/include/c++/12/backward",
-						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin22/12/include",
-						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin22/12/include-fixed",
+						"/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12",
+						"/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/aarch64-apple-darwin22",
+						"/opt/homebrew/Cellar/gcc/12.2.0/include/c++/12/backward",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin22/12/include",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin22/12/include-fixed",
 						"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include",
 						"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks"
 					],
 					"linkDirectories" : 
 					[
-						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin22/12",
-						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc",
-						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin22/12",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current",
 						"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/lib"
 					],
 					"linkFrameworkDirectories" : 
@@ -72,11 +73,12 @@
 					"linkLibraries" : 
 					[
 						"stdc++",
-						"gcc_s.1.1",
+						"emutls_w",
+						"gcc",
 						"gcc"
 					]
 				},
-				"path" : "/usr/local/bin/g++-12",
+				"path" : "/opt/homebrew/bin/aarch64-apple-darwin22-g++-12",
 				"version" : "12.2.0"
 			},
 			"language" : "CXX",

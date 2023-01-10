@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/anthonybenkhebbab/Documents/Dev/Projects/Clox/build"
+			"value" : "/Users/ancyr/Documents/Dev/Projects/clox/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -94,6 +94,22 @@
 			"value" : "1"
 		},
 		{
+			"name" : "CMAKE_COLOR_MAKEFILE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enable/Disable color output during build."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "ON"
+		},
+		{
 			"name" : "CMAKE_COMMAND",
 			"properties" : 
 			[
@@ -103,7 +119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/Cellar/cmake/3.25.1/bin/cmake"
+			"value" : "/opt/homebrew/Cellar/cmake/3.25.1/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -115,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/Cellar/cmake/3.25.1/bin/cpack"
+			"value" : "/opt/homebrew/Cellar/cmake/3.25.1/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -127,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/Cellar/cmake/3.25.1/bin/ctest"
+			"value" : "/opt/homebrew/Cellar/cmake/3.25.1/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -143,7 +159,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/usr/local/bin/g++-12"
+			"value" : "/opt/homebrew/bin/aarch64-apple-darwin22-g++-12"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -159,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gcc-ar-12"
+			"value" : "/opt/homebrew/bin/aarch64-apple-darwin22-gcc-ar-12"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -175,7 +191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gcc-ranlib-12"
+			"value" : "/opt/homebrew/bin/aarch64-apple-darwin22-gcc-ranlib-12"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -271,7 +287,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/usr/local/bin/gcc-12"
+			"value" : "/opt/homebrew/bin/aarch64-apple-darwin22-gcc-12"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -287,7 +303,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gcc-ar-12"
+			"value" : "/opt/homebrew/bin/aarch64-apple-darwin22-gcc-ar-12"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -303,7 +319,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gcc-ranlib-12"
+			"value" : "/opt/homebrew/bin/aarch64-apple-darwin22-gcc-ranlib-12"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -411,7 +427,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/Cellar/cmake/3.25.1/bin/ccmake"
+			"value" : "/opt/homebrew/Cellar/cmake/3.25.1/bin/ccmake"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -539,7 +555,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/anthonybenkhebbab/Documents/Dev/Projects/Clox/build/CMakeFiles/pkgRedirects"
+			"value" : "/Users/ancyr/Documents/Dev/Projects/clox/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -551,7 +567,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Ninja"
+			"value" : "Unix Makefiles"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -599,7 +615,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/anthonybenkhebbab/Documents/Dev/Projects/Clox"
+			"value" : "/Users/ancyr/Documents/Dev/Projects/clox"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -655,11 +671,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Program used to build from build.ninja files."
+					"value" : "Path to a program."
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/ninja"
+			"value" : "/opt/homebrew/bin/gmake"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -823,7 +839,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "13.0"
 		},
 		{
 			"name" : "CMAKE_OSX_SYSROOT",
@@ -987,7 +1003,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/Cellar/cmake/3.25.1/share/cmake"
+			"value" : "/opt/homebrew/Cellar/cmake/3.25.1/share/cmake"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1235,7 +1251,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/anthonybenkhebbab/Documents/Dev/Projects/Clox/build"
+			"value" : "/Users/ancyr/Documents/Dev/Projects/clox/build"
 		},
 		{
 			"name" : "clox_IS_TOP_LEVEL",
@@ -1259,7 +1275,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/anthonybenkhebbab/Documents/Dev/Projects/Clox"
+			"value" : "/Users/ancyr/Documents/Dev/Projects/clox"
 		}
 	],
 	"kind" : "cache",
