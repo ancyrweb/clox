@@ -29,6 +29,13 @@
     "array": "c",
     "functional": "c",
     "utility": "c",
-    "variant": "c"
+    "variant": "c",
+    "__hash_table": "c",
+    "memory_resource": "c",
+    "istream": "c",
+    "mutex": "c",
+    "new": "c",
+    "sstream": "c",
+    "streambuf": "c"
   }
 }
